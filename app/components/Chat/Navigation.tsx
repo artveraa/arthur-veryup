@@ -3,12 +3,14 @@ import { useChat } from "@/app/context/ChatContext";
 import { tabs } from "@/app/data/tabs";
 
 const Navigation = () => {
-  const { currentTab, setCurrentTab, setCurrentQuestion } = useChat();
+  const { currentTab, setCurrentTab, setCurrentQuestion, clearMessages } =
+    useChat();
 
   // Permet de changer l'onglet actif et la question active
   const handleClick = (item: number) => {
     setCurrentTab(item);
     setCurrentQuestion(item);
+    clearMessages();
   };
 
   return (
