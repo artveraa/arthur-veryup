@@ -11,6 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        dark: "var(--dark)",
+        light: "var(--light)",
+        yellow: "var(--yellow)",
+        lightdark: "var(--light-dark)",
+        grey: "var(--grey)",
+      },
+      fontFamily: {
+        "helvetica-bold": "var(--font-helvetica-bold)",
+        helvetica: "var(--font-helvetica-regular)",
+        poppins: "var(--font-poppins)",
       },
     },
   },
