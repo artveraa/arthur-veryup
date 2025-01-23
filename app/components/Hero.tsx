@@ -4,11 +4,13 @@ import StartButton from "./StartButton";
 const Hero = () => {
   return (
     <div className="relative h-[100vh] w-full pt-1O flex flex-col justify-center items-center">
-      <div className="font-poppins font-semibold   text-center z-20">
-        <p className="block leading-auto text-yellow text-2xl mb-4">
+      <div className="font-poppins font-semibold px-5  text-center z-20">
+        <p className="block leading-auto text-yellow text-xl lg:text-2xl mb-4">
           Entraînement
         </p>
-        <h1 className="leading-auto text-8xl">Le brassage de la bière</h1>
+        <h1 className="leading-auto text-6xl lg:text-8xl">
+          Le brassage de la bière
+        </h1>
       </div>
 
       <div className="absolute hero-gradient w-full h-full z-10"></div>

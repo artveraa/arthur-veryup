@@ -4,7 +4,7 @@ import UserInfos from "@/app/components/UserInfos";
 
 const Header = () => {
   return (
-    <div className="p-10 flex justify-between items-center fixed backdrop-blur-lg bg-dark/[.06] w-full z-20">
+    <div className="p-5 2xl:p-10 flex justify-between items-center fixed backdrop-blur-lg bg-dark/[.06] w-full z-40 gap-5">
       <BackButton label="Revenir à l'accueil" isIcon={true} />
       <Logo />
       <UserInfos

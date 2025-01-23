@@ -8,7 +8,7 @@ interface UserInfosProps {
 const UserInfos = ({ name, imageUrl }: UserInfosProps) => {
   return (
     <div className="flex items-center gap-[10px]">
-      <p className="font-poppins font-semibold text-base leading-none">
+      <p className="font-poppins font-semibold text-base leading-none hidden md:block">
         {name}
       </p>
       <Image

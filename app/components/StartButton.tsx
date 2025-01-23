@@ -3,15 +3,24 @@
 import Image from "next/image";
 
 const StartButton = () => {
+  const handleClick = () => {
+    const intro = document.getElementById("intro");
+    if (intro) {
+      intro.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <div className="start-button cursor-pointer flex flex-col items-center group">
+    <div
+      className="start-button cursor-pointer flex flex-col items-center group p-5"
+      onClick={() => handleClick()}
+    >
       <div className="button-wrapper w-24 aspect-square bg-white/[.65] rounded-full flex justify-center items-center outline outline-0 transition-all duration-300 group-hover:scale-110 ">
         <div className="logo-wrapper bg-light w-20 aspect-square rounded-full flex justify-center items-center ">
           <Image src="/logo.svg" alt="logo" width={36} height={36} />
         </div>
       </div>
 
-      <p className="font-helvetica-bold uppercase text-sm mt-1.5 mb-2.5">
+      <p className="font-helvetica-bold uppercase text-sm mt-3 mb-2.5">
         Commencer
       </p>
 

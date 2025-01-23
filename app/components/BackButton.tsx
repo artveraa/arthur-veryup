@@ -16,7 +16,7 @@ const BackButton = ({ label, isIcon }: BackButtonProps) => {
           alt="Icone flèche retour"
         />
       )}
-      <span className="font-poppins text-">{label}</span>
+      <span className="font-poppins hidden md:block">{label}</span>
     </button>
   );
 };
