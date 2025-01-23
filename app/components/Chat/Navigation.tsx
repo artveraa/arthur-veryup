@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import { useChat } from "@/app/context/ChatContext";
 import { tabs } from "@/app/data/tabs";
 

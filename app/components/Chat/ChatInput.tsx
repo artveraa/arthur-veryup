@@ -15,7 +15,6 @@ const ChatInput = () => {
     setCurrentQuestion,
     currentQuestion,
     setIsLoading,
-    isLoading,
   } = useChat();
 
   // Permet d'ajouter un message à la liste des messages via le context
