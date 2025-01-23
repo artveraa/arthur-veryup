@@ -4,7 +4,7 @@ import { tabs } from "@/app/data/tabs";
 import { questions } from "@/app/data/questions";
 
 const Messages = () => {
-  const { messages, currentTab, currentQuestion } = useChat();
+  const { messages, currentTab, currentQuestion, isLoading } = useChat();
 
   return (
     <div className="pr-10">
@@ -33,6 +33,15 @@ const Messages = () => {
                 <p className="font-poppins font-semibold text-sm">{message}</p>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+      {isLoading && (
+        <div className="flex justify-end items-center">
+          <div className="loader message bg-white text-dark w-fit p-4 rounded-md">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
           </div>
         </div>
       )}

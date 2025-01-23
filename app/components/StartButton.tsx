@@ -3,10 +3,13 @@
 import Image from "next/image";
 
 const StartButton = () => {
+  // Fonction pour scroller vers intro
   const handleClick = () => {
     const intro = document.getElementById("intro");
     if (intro) {
-      intro.scrollIntoView({ behavior: "smooth" });
+      intro.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
   return (

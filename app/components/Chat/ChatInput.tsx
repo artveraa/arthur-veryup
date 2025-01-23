@@ -14,8 +14,11 @@ const ChatInput = () => {
     clearMessages,
     setCurrentQuestion,
     currentQuestion,
+    setIsLoading,
+    isLoading,
   } = useChat();
 
+  // Permet d'ajouter un message à la liste des messages via le context
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (value.trim()) {
@@ -23,12 +26,20 @@ const ChatInput = () => {
       setValue("");
 
       setTimeout(() => {
+        setIsLoading(true);
+      }, 1000);
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+
+      setTimeout(() => {
         if (currentTab < tabs.length - 1) {
           clearMessages();
           setCurrentTab(currentTab + 1);
           setCurrentQuestion(currentQuestion + 1);
         }
-      }, 2000);
+      }, 3000);
     }
   };
 

@@ -13,13 +13,6 @@ const Intro = () => {
         travers chaque étape du processus.
       </p>
       <div className="intro-gradient absolute intro-gradient w-full h-full z-10"></div>
-      {/* <Image
-        src="https://images.unsplash.com/photo-1524587253133-266042ff67d0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="hero"
-        width={1744}
-        height={580}
-        className="absolute -z-20 w-full h-auto top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 object-cover"
-      /> */}
     </div>
   );
 };
